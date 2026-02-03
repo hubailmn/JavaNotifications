@@ -1,5 +1,3 @@
-package cc.hubailmn.advancedproggraming.Lab1.task1;
-
 public class SecureEmailNotification extends EmailNotification {
 
     private boolean encrypted;

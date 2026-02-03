@@ -1,5 +1,3 @@
-package cc.hubailmn.advancedproggraming.Lab1.task2;
-
 public class AnonymousClassTest {
 
     public static void main(String[] args) {
