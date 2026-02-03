@@ -1,6 +1,6 @@
 public class EmailNotification extends Notification {
 
-    private String emailAddress;
+    private final String emailAddress;
 
     public EmailNotification(String message, String emailAddress) {
         super(message);

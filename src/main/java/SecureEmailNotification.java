@@ -1,6 +1,6 @@
 public class SecureEmailNotification extends EmailNotification {
 
-    private boolean encrypted;
+    private final boolean encrypted;
 
     public SecureEmailNotification(String message, String emailAddress, boolean encrypted) {
         super(message, emailAddress);
@@ -10,8 +10,7 @@ public class SecureEmailNotification extends EmailNotification {
 
     @Override
     public String send() {
-        return (encrypted ? "Secured Message! |" : "Unsecured Message! |") + " " + super.send() ;
-
+        return (encrypted ? "Secured Message! |" : "Unsecured Message! |") + " " + super.send();
     }
 
 }
