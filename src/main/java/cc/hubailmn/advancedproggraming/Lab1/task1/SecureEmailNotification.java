@@ -1,0 +1,19 @@
+package cc.hubailmn.advancedproggraming.Lab1.task1;
+
+public class SecureEmailNotification extends EmailNotification {
+
+    private boolean encrypted;
+
+    public SecureEmailNotification(String message, String emailAddress, boolean encrypted) {
+        super(message, emailAddress);
+        this.encrypted = encrypted;
+    }
+
+
+    @Override
+    public String send() {
+        return (encrypted ? "Secured Message! |" : "Unsecured Message! |") + " " + super.send() ;
+
+    }
+
+}
