@@ -29,7 +29,6 @@ public class FitnessStreamLab {
         System.out.println("Steps statistic: " + statistic);
         System.out.println();
 
-
         String stepString = IntStream.range(0, steps.length)
                 .mapToObj(i -> "Day " + (i + 1) + " " + steps[i])
                 .collect(Collectors.joining(", "));
